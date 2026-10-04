@@ -1,0 +1,1103 @@
+sample_id,ground_truth,prediction,probability,confidence,cwe,project,line_count,length_bin,code_snippet
+diversevul_019912,0,1,0.9999,0.9999,CWE-189,xserver,27,20-50,"ProcShmQueryVersion(client)
+    register ClientPtr client;
+{
+    xShmQueryVersionReply rep;
+    register int n;
+
+    REQUEST_SIZE_MATCH(xShmQueryVersionReq);
+    rep.type = X_Reply;
+    rep.length = 0"
+diversevul_020211,0,1,0.9999,0.9999,NVD-CWE-Other,m4,22,20-50,"m4_syscmd (struct obstack *obs, int argc, token_data **argv)
+{
+  if (bad_argc (argv[0], argc, 2, 2))
+    {
+      /* The empty command is successful.  */
+      sysval = 0;
+      return;
+    }
+
+  debug_"
+diversevul_019632,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,11,<20,"static int jpc_unk_putparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *out)
+{
+	/* Eliminate compiler warning about unused variables. */
+	cstate = 0;
+	ms = 0;
+	out = 0;
+
+	/* If this function is "
+diversevul_018975,0,1,0.9999,0.9999,CWE-264,php-src,8,<20,"static void php_sqlite3_func_step_callback(sqlite3_context *context, int argc,
+	sqlite3_value **argv)
+{
+	struct pdo_sqlite_func *func = (struct pdo_sqlite_func*)sqlite3_user_data(context);
+	TSRMLS_FET"
+diversevul_020214,0,1,0.9999,0.9999,NVD-CWE-Other,m4,40,20-50,"define_macro (int argc, token_data **argv, symbol_lookup mode)
+{
+  const builtin *bp;
+
+  if (bad_argc (argv[0], argc, 2, 3))
+    return;
+
+  if (TOKEN_DATA_TYPE (argv[1]) != TOKEN_TEXT)
+    {
+      M4E"
+diversevul_020181,0,1,0.9999,0.9999,NVD-CWE-Other,m4,24,20-50,"set_macro_sequence (const char *regexp)
+{
+  const char *msg;
+
+  if (! regexp)
+    regexp = DEFAULT_MACRO_SEQUENCE;
+  else if (regexp[0] == '\0')
+    {
+      macro_sequence_inuse = false;
+      return;"
+diversevul_020192,0,1,0.9999,0.9999,NVD-CWE-Other,m4,8,<20,"m4_undefine (struct obstack *obs, int argc, token_data **argv)
+{
+  int i;
+  if (bad_argc (argv[0], argc, 2, -1))
+    return;
+  for (i = 1; i < argc; i++)
+    lookup_symbol (ARG (i), SYMBOL_DELETE);
+}"
+diversevul_019657,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,20,20-50,"static int jpc_com_dumpparms(jpc_ms_t *ms, FILE *out)
+{
+	jpc_com_t *com = &ms->parms.com;
+	unsigned int i;
+	int printable;
+	fprintf(out, ""regid = %d;\n"", com->regid);
+	printable = 1;
+	for (i = 0; i < "
+diversevul_019631,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,18,<20,"static int jpc_crg_putparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *out)
+{
+	jpc_crg_t *crg = &ms->parms.crg;
+	int compno;
+	jpc_crgcomp_t *comp;
+
+	/* Eliminate compiler warning about unused v"
+diversevul_020230,0,1,0.9999,0.9999,NVD-CWE-Other,m4,7,<20,"set_trace (symbol *sym, void *data)
+{
+  SYMBOL_TRACED (sym) = data != NULL;
+  /* Remove placeholder from table if macro is undefined and untraced.  */
+  if (SYMBOL_TYPE (sym) == TOKEN_VOID && data == "
+diversevul_019910,0,1,0.9999,0.9999,CWE-189,xserver,119,>100,"ProcPanoramiXShmGetImage(ClientPtr client)
+{
+    PanoramiXRes	*draw;
+    DrawablePtr 	drawables[MAXSCREENS];
+    DrawablePtr 	pDraw;
+    xShmGetImageReply	xgi;
+    ShmDescPtr		shmdesc;
+    int        "
+diversevul_018977,0,1,0.9999,0.9999,CWE-264,php-src,52,50-100,"static void pdo_sqlite_cleanup_callbacks(pdo_sqlite_db_handle *H TSRMLS_DC)
+{
+	struct pdo_sqlite_func *func;
+
+	while (H->funcs) {
+		func = H->funcs;
+		H->funcs = func->next;
+
+		if (H->db) {
+			/* dele"
+diversevul_020167,0,1,0.9999,0.9999,NVD-CWE-Other,m4,7,<20,"m4_dnl (struct obstack *obs, int argc, token_data **argv)
+{
+  if (bad_argc (argv[0], argc, 1, 1))
+    return;
+
+  skip_line ();
+}"
+diversevul_019656,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,32,20-50,"static int jpc_siz_putparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *out)
+{
+	jpc_siz_t *siz = &ms->parms.siz;
+	unsigned int i;
+
+	/* Eliminate compiler warning about unused variables. */
+	csta"
+diversevul_020176,0,1,0.9999,0.9999,NVD-CWE-Other,m4,9,<20,"m4_changequote (struct obstack *obs, int argc, token_data **argv)
+{
+  if (bad_argc (argv[0], argc, 1, 3))
+    return;
+
+  /* Explicit NULL distinguishes between empty and missing argument.  */
+  set_qu"
+diversevul_018976,0,1,0.9999,0.9999,CWE-264,php-src,7,<20,"static void php_sqlite3_func_final_callback(sqlite3_context *context)
+{
+	struct pdo_sqlite_func *func = (struct pdo_sqlite_func*)sqlite3_user_data(context);
+	TSRMLS_FETCH();
+
+	do_callback(&func->afini"
+diversevul_020212,0,1,0.9999,0.9999,NVD-CWE-Other,m4,4,<20,"m4_define (struct obstack *obs, int argc, token_data **argv)
+{
+  define_macro (argc, argv, SYMBOL_INSERT);
+}"
+diversevul_020175,0,1,0.9999,0.9999,NVD-CWE-Other,m4,64,50-100,"m4_eval (struct obstack *obs, int argc, token_data **argv)
+{
+  int32_t value = 0;
+  int radix = 10;
+  int min = 1;
+  const char *s;
+
+  if (bad_argc (argv[0], argc, 2, 4))
+    return;
+
+  if (*ARG (2) &"
+diversevul_020187,0,1,0.9999,0.9999,NVD-CWE-Other,m4,33,20-50,"expand_ranges (const char *s, struct obstack *obs)
+{
+  unsigned char from;
+  unsigned char to;
+
+  for (from = '\0'; *s != '\0'; from = to_uchar (*s++))
+    {
+      if (*s == '-' && from != '\0')
+	{
+	 "
+diversevul_019919,0,1,0.9999,0.9999,CWE-189,xserver,21,20-50,"SProcShmPutImage(client)
+    ClientPtr client;
+{
+    register int n;
+    REQUEST(xShmPutImageReq);
+    swaps(&stuff->length, n);
+    REQUEST_SIZE_MATCH(xShmPutImageReq);
+    swapl(&stuff->drawable, n)"
+diversevul_020235,0,1,0.9999,0.9999,NVD-CWE-Other,m4,6,<20,"m4_mkstemp (struct obstack *obs, int argc, token_data **argv)
+{
+  if (bad_argc (argv[0], argc, 2, 2))
+    return;
+  mkstemp_helper (obs, ARG (0), ARG (1), strlen (ARG (1)));
+}"
+diversevul_020170,0,1,0.9999,0.9999,NVD-CWE-Other,m4,10,<20,"dump_symbol (symbol *sym, void *arg)
+{
+  struct dump_symbol_data *data = (struct dump_symbol_data *) arg;
+  if (!SYMBOL_SHADOWED (sym) && SYMBOL_TYPE (sym) != TOKEN_VOID)
+    {
+      obstack_blank (da"
+diversevul_018959,0,1,0.9999,0.9999,CWE-264,php-src,22,20-50,"static char *make_filename_safe(const char *filename TSRMLS_DC)
+{
+	if (*filename && memcmp(filename, "":memory:"", sizeof("":memory:""))) {
+		char *fullpath = expand_filepath(filename, NULL TSRMLS_CC);
+
+	"
+diversevul_020231,0,1,0.9999,0.9999,NVD-CWE-Other,m4,42,20-50,"m4_ifelse (struct obstack *obs, int argc, token_data **argv)
+{
+  const char *result;
+  token_data *argv0;
+
+  if (argc == 2)
+    return;
+
+  if (bad_argc (argv[0], argc, 4, -1))
+    return;
+  else
+    /"
+diversevul_019914,0,1,0.9999,0.9999,CWE-189,xserver,111,>100,"ProcShmGetImage(client)
+    register ClientPtr client;
+{
+    DrawablePtr		pDraw;
+    long		lenPer = 0, length;
+    Mask		plane = 0;
+    xShmGetImageReply	xgi;
+    ShmDescPtr		shmdesc;
+    int			n, rc;"
+diversevul_020174,0,1,0.9999,0.9999,NVD-CWE-Other,m4,67,50-100,"m4_dumpdef (struct obstack *obs, int argc, token_data **argv)
+{
+  symbol *s;
+  int i;
+  struct dump_symbol_data data;
+  const builtin *bp;
+
+  data.obs = obs;
+  data.base = (symbol **) obstack_base (ob"
+diversevul_019903,0,1,0.9999,0.9999,CWE-189,xserver,15,<20,"SProcShmCreatePixmap(client)
+    ClientPtr client;
+{
+    register int n;
+    REQUEST(xShmCreatePixmapReq);
+    swaps(&stuff->length, n);
+    REQUEST_SIZE_MATCH(xShmCreatePixmapReq);
+    swapl(&stuff->"
+diversevul_020186,0,1,0.9999,0.9999,NVD-CWE-Other,m4,4,<20,"m4_pushdef (struct obstack *obs, int argc, token_data **argv)
+{
+  define_macro (argc, argv,  SYMBOL_PUSHDEF);
+}"
+diversevul_019634,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,20,20-50,"static int jpc_rgn_getparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *in)
+{
+	jpc_rgn_t *rgn = &ms->parms.rgn;
+	uint_fast8_t tmp;
+	if (cstate->numcomps <= 256) {
+		if (jpc_getuint8(in, &tmp)) {"
+diversevul_020229,0,1,0.9999,0.9999,NVD-CWE-Other,m4,8,<20,"m4___file__ (struct obstack *obs, int argc, token_data **argv)
+{
+  if (bad_argc (argv[0], argc, 1, 1))
+    return;
+  obstack_grow (obs, lquote.string, lquote.length);
+  obstack_grow (obs, current_file"
+diversevul_019677,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,7,<20,"static void jpc_com_destroyparms(jpc_ms_t *ms)
+{
+	jpc_com_t *com = &ms->parms.com;
+	if (com->data) {
+		jas_free(com->data);
+	}
+}"
+diversevul_020206,0,1,0.9999,0.9999,NVD-CWE-Other,m4,6,<20,"m4_shift (struct obstack *obs, int argc, token_data **argv)
+{
+  if (bad_argc (argv[0], argc, 2, -1))
+    return;
+  dump_args (obs, argc - 1, argv + 1, "","", true);
+}"
+diversevul_019676,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,8,<20,"int jpc_putuint16(jas_stream_t *out, uint_fast16_t val)
+{
+	if (jas_stream_putc(out, (val >> 8) & 0xff) == EOF ||
+	  jas_stream_putc(out, val & 0xff) == EOF) {
+		return -1;
+	}
+	return 0;
+}"
+diversevul_019642,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,9,<20,"static int jpc_unk_dumpparms(jpc_ms_t *ms, FILE *out)
+{
+	unsigned int i;
+	jpc_unk_t *unk = &ms->parms.unk;
+	for (i = 0; i < unk->len; ++i) {
+		fprintf(out, ""%02x "", unk->data[i]);
+	}
+	return 0;
+}"
+diversevul_020236,0,1,0.9999,0.9999,NVD-CWE-noinfo,m4,106,>100,"produce_frozen_state (const char *name)
+{
+  FILE *file;
+  int h;
+  symbol *sym;
+  const builtin *bp;
+
+  if (file = fopen (name, O_BINARY ? ""wb"" : ""w""), !file)
+    {
+      M4ERROR ((warning_status, err"
+diversevul_018969,0,1,0.9999,0.9999,CWE-264,php-src,9,<20,"static void pdo_sqlite_request_shutdown(pdo_dbh_t *dbh TSRMLS_DC)
+{
+	pdo_sqlite_db_handle *H = (pdo_sqlite_db_handle *)dbh->driver_data;
+	/* unregister functions, so that they don't linger for the nex"
+diversevul_019624,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,12,<20,"static int jpc_sop_putparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *out)
+{
+	jpc_sop_t *sop = &ms->parms.sop;
+
+	/* Eliminate compiler warning about unused variable. */
+	cstate = 0;
+
+	if (jpc_"
+diversevul_018974,0,1,0.9999,0.9999,CWE-264,php-src,21,20-50,"static int sqlite_handle_closer(pdo_dbh_t *dbh TSRMLS_DC) /* {{{ */
+{
+	pdo_sqlite_db_handle *H = (pdo_sqlite_db_handle *)dbh->driver_data;
+	
+	if (H) {
+		pdo_sqlite_error_info *einfo = &H->einfo;
+
+		pd"
+diversevul_020198,0,1,0.9999,0.9999,NVD-CWE-Other,m4,5,<20,"m4_placeholder (struct obstack *obs, int argc, token_data **argv)
+{
+  M4ERROR ((warning_status, 0, ""\
+builtin `%s' requested by frozen file is not supported"", ARG (0)));
+}"
+diversevul_019661,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,7,<20,"static void jpc_crg_destroyparms(jpc_ms_t *ms)
+{
+	jpc_crg_t *crg = &ms->parms.crg;
+	if (crg->comps) {
+		jas_free(crg->comps);
+	}
+}"
+diversevul_020183,0,1,0.9999,0.9999,NVD-CWE-Other,m4,7,<20,"m4_changeword (struct obstack *obs, int argc, token_data **argv)
+{
+  if (bad_argc (argv[0], argc, 2, 2))
+    return;
+
+  set_word_regexp (TOKEN_DATA_TEXT (argv[1]));
+}"
+diversevul_020224,0,1,0.9999,0.9999,NVD-CWE-Other,m4,27,20-50,"m4_substr (struct obstack *obs, int argc, token_data **argv)
+{
+  int start = 0;
+  int length, avail;
+
+  if (bad_argc (argv[0], argc, 3, 4))
+    {
+      /* builtin(`substr') is blank, but substr(`abc')"
+diversevul_019671,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,18,<20,"static int jpc_siz_dumpparms(jpc_ms_t *ms, FILE *out)
+{
+	jpc_siz_t *siz = &ms->parms.siz;
+	unsigned int i;
+	fprintf(out, ""caps = 0x%02x;\n"", siz->caps);
+	fprintf(out, ""width = %d; height = %d; xoff = "
+diversevul_020195,0,1,0.9999,0.9999,NVD-CWE-Other,m4,7,<20,"shipout_int (struct obstack *obs, int val)
+{
+  const char *s;
+
+  s = ntoa ((int32_t) val, 10);
+  obstack_grow (obs, s, strlen (s));
+}"
+diversevul_019915,0,1,0.9999,0.9999,CWE-189,xserver,22,20-50,"SProcShmDispatch (client)
+    register ClientPtr	client;
+{
+    REQUEST(xReq);
+    switch (stuff->data)
+    {
+    case X_ShmQueryVersion:
+	return SProcShmQueryVersion(client);
+    case X_ShmAttach:
+	re"
+diversevul_019648,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,24,20-50,"int jpc_validate(jas_stream_t *in)
+{
+	int n;
+	int i;
+	unsigned char buf[2];
+
+	assert(JAS_STREAM_MAXPUTBACK >= 2);
+
+	if ((n = jas_stream_read(in, (char *) buf, 2)) < 0) {
+		return -1;
+	}
+	for (i = n - "
+diversevul_020194,0,1,0.9999,0.9999,NVD-CWE-Other,m4,41,20-50,"m4_maketemp (struct obstack *obs, int argc, token_data **argv)
+{
+  if (bad_argc (argv[0], argc, 2, 2))
+    return;
+  if (no_gnu_extensions)
+    {
+      /* POSIX states ""any trailing 'X' characters [ar"
+diversevul_020190,0,1,0.9999,0.9999,NVD-CWE-Other,m4,31,20-50,"ntoa (int32_t value, int radix)
+{
+  bool negative;
+  uint32_t uvalue;
+  static char str[256];
+  char *s = &str[sizeof str];
+
+  *--s = '\0';
+
+  if (value < 0)
+    {
+      negative = true;
+      uvalue "
+diversevul_019652,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,7,<20,"static void jpc_unk_destroyparms(jpc_ms_t *ms)
+{
+	jpc_unk_t *unk = &ms->parms.unk;
+	if (unk->data) {
+		jas_free(unk->data);
+	}
+}"
+diversevul_020219,0,1,0.9999,0.9999,NVD-CWE-Other,m4,33,20-50,"numeric_arg (token_data *macro, const char *arg, int *valuep)
+{
+  char *endp;
+
+  if (*arg == '\0')
+    {
+      *valuep = 0;
+      M4ERROR ((warning_status, 0,
+		""empty string treated as 0 in builtin `"
+diversevul_019635,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,7,<20,"int jpc_putuint8(jas_stream_t *out, uint_fast8_t val)
+{
+	if (jas_stream_putc(out, val & 0xff) == EOF) {
+		return -1;
+	}
+	return 0;
+}"
+diversevul_019633,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,5,<20,"static int jpc_qcd_getparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *in)
+{
+	jpc_qcxcp_t *compparms = &ms->parms.qcd.compparms;
+	return jpc_qcx_getcompparms(compparms, cstate, in, ms->len);
+}"
+diversevul_020178,0,1,0.9999,0.9999,NVD-CWE-Other,m4,14,<20,"m4_traceon (struct obstack *obs, int argc, token_data **argv)
+{
+  symbol *s;
+  int i;
+
+  if (argc == 1)
+    hack_all_symbols (set_trace, obs);
+  else
+    for (i = 1; i < argc; i++)
+      {
+	s = lookup"
+diversevul_018968,0,1,0.9999,0.9999,CWE-264,php-src,59,50-100,"static PHP_METHOD(SQLite, sqliteCreateAggregate)
+{
+	struct pdo_sqlite_func *func;
+	zval *step_callback, *fini_callback;
+	char *func_name;
+	int func_name_len;
+	long argc = -1;
+	char *cbname = NULL;
+	pd"
+diversevul_018980,0,1,0.9999,0.9999,CWE-264,php-src,12,<20,"static int pdo_sqlite_fetch_error_func(pdo_dbh_t *dbh, pdo_stmt_t *stmt, zval *info TSRMLS_DC)
+{
+	pdo_sqlite_db_handle *H = (pdo_sqlite_db_handle *)dbh->driver_data;
+	pdo_sqlite_error_info *einfo = &H"
+diversevul_019646,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,5,<20,"static void jpc_coc_destroyparms(jpc_ms_t *ms)
+{
+	jpc_coc_t *coc = &ms->parms.coc;
+	jpc_cox_destroycompparms(&coc->compparms);
+}"
+diversevul_020217,0,1,0.9999,0.9999,NVD-CWE-Other,m4,12,<20,"m4_divert (struct obstack *obs, int argc, token_data **argv)
+{
+  int i = 0;
+
+  if (bad_argc (argv[0], argc, 1, 2))
+    return;
+
+  if (argc >= 2 && !numeric_arg (argv[0], ARG (1), &i))
+    return;
+
+  m"
+diversevul_019629,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,21,20-50,"static int jpc_cod_getparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *in)
+{
+	jpc_cod_t *cod = &ms->parms.cod;
+	if (jpc_getuint8(in, &cod->csty)) {
+		return -1;
+	}
+	if (jpc_getuint8(in, &cod->p"
+diversevul_019673,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,5,<20,"static void jpc_cox_destroycompparms(jpc_coxcp_t *compparms)
+{
+	/* Eliminate compiler warning about unused variables. */
+	compparms = 0;
+}"
+diversevul_019655,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,22,20-50,"static int jpc_poc_putparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *out)
+{
+	jpc_poc_t *poc = &ms->parms.poc;
+	jpc_pocpchg_t *pchg;
+	int pchgno;
+	for (pchgno = 0, pchg = poc->pchgs; pchgno < "
+diversevul_019680,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,10,<20,"static int jpc_coc_dumpparms(jpc_ms_t *ms, FILE *out)
+{
+	jpc_coc_t *coc = &ms->parms.coc;
+	fprintf(out, ""compno = %d; csty = 0x%02x; numdlvls = %d;\n"",
+	  coc->compno, coc->compparms.csty, coc->comppa"
+diversevul_019647,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,25,20-50,"int jpc_getuint32(jas_stream_t *in, uint_fast32_t *val)
+{
+	uint_fast32_t v;
+	int c;
+	if ((c = jas_stream_getc(in)) == EOF) {
+		return -1;
+	}
+	v = c;
+	if ((c = jas_stream_getc(in)) == EOF) {
+		return -"
+diversevul_020234,0,1,0.9999,0.9999,NVD-CWE-Other,m4,78,50-100,"m4_patsubst (struct obstack *obs, int argc, token_data **argv)
+{
+  const char *victim;		/* first argument */
+  const char *regexp;		/* regular expression */
+
+  struct re_pattern_buffer buf;	/* compile"
+diversevul_019611,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,5,<20,"static void jpc_qcd_destroyparms(jpc_ms_t *ms)
+{
+	jpc_qcd_t *qcd = &ms->parms.qcd;
+	jpc_qcx_destroycompparms(&qcd->compparms);
+}"
+diversevul_019628,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,5,<20,"static void jpc_cod_destroyparms(jpc_ms_t *ms)
+{
+	jpc_cod_t *cod = &ms->parms.cod;
+	jpc_cox_destroycompparms(&cod->compparms);
+}"
+diversevul_019908,0,1,0.9999,0.9999,CWE-189,xserver,19,<20,"ShmDestroyPixmap (PixmapPtr pPixmap)
+{
+    ScreenPtr	    pScreen = pPixmap->drawable.pScreen;
+    Bool	    ret;
+    if (pPixmap->refcnt == 1)
+    {
+	ShmDescPtr  shmdesc;
+	shmdesc = (ShmDescPtr)dixLook"
+diversevul_018965,0,1,0.9999,0.9999,CWE-264,php-src,13,<20,"static int sqlite_handle_begin(pdo_dbh_t *dbh TSRMLS_DC)
+{
+	pdo_sqlite_db_handle *H = (pdo_sqlite_db_handle *)dbh->driver_data;
+	char *errmsg = NULL;
+
+	if (sqlite3_exec(H->db, ""BEGIN"", NULL, NULL, &er"
+diversevul_020191,0,1,0.9999,0.9999,NVD-CWE-Other,m4,6,<20,"m4_divnum (struct obstack *obs, int argc, token_data **argv)
+{
+  if (bad_argc (argv[0], argc, 1, 1))
+    return;
+  shipout_int (obs, current_diversion);
+}"
+diversevul_019643,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,5,<20,"static int jpc_qcd_putparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *out)
+{
+	jpc_qcxcp_t *compparms = &ms->parms.qcd.compparms;
+	return jpc_qcx_putcompparms(compparms, cstate, out);
+}"
+diversevul_020228,0,1,0.9999,0.9999,NVD-CWE-Other,m4,58,50-100,"m4_translit (struct obstack *obs, int argc, token_data **argv)
+{
+  const char *data;
+  const char *from;
+  const char *to;
+  char map[256] = {0};
+  char found[256] = {0};
+  unsigned char ch;
+
+  if (ba"
+diversevul_019917,0,1,0.9999,0.9999,CWE-189,xserver,11,<20,"SShmCompletionEvent(from, to)
+    xShmCompletionEvent *from, *to;
+{
+    to->type = from->type;
+    cpswaps(from->sequenceNumber, to->sequenceNumber);
+    cpswapl(from->drawable, to->drawable);
+    cps"
+diversevul_019612,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,22,20-50,"static int jpc_coc_putparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *out)
+{
+	jpc_coc_t *coc = &ms->parms.coc;
+	assert(coc->compparms.numdlvls <= 32);
+	if (cstate->numcomps <= 256) {
+		if (jpc"
+diversevul_018957,0,1,0.9999,0.9999,CWE-264,php-src,49,20-50,"static int pdo_sqlite_handle_factory(pdo_dbh_t *dbh, zval *driver_options TSRMLS_DC) /* {{{ */
+{
+	pdo_sqlite_db_handle *H;
+	int i, ret = 0;
+	long timeout = 60;
+	char *filename;
+
+	H = pecalloc(1, sizeo"
+diversevul_019641,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,60,50-100,"static int jpc_qcx_getcompparms(jpc_qcxcp_t *compparms, jpc_cstate_t *cstate,
+  jas_stream_t *in, uint_fast16_t len)
+{
+	uint_fast8_t tmp;
+	int n;
+	int i;
+
+	/* Eliminate compiler warning about unused v"
+diversevul_019913,0,1,0.9999,0.9999,CWE-189,xserver,11,<20,"SProcShmAttach(client)
+    ClientPtr client;
+{
+    register int n;
+    REQUEST(xShmAttachReq);
+    swaps(&stuff->length, n);
+    REQUEST_SIZE_MATCH(xShmAttachReq);
+    swapl(&stuff->shmseg, n);
+    sw"
+diversevul_020238,0,1,0.9999,0.9999,NVD-CWE-noinfo,m4,15,<20,"reverse_symbol_list (symbol *sym)
+{
+  symbol *result;
+  symbol *next;
+
+  result = NULL;
+  while (sym)
+    {
+      next = SYMBOL_NEXT (sym);
+      SYMBOL_NEXT (sym) = result;
+      result = sym;
+      "
+diversevul_019620,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,26,20-50,"static int jpc_coc_getparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *in)
+{
+	jpc_coc_t *coc = &ms->parms.coc;
+	uint_fast8_t tmp;
+	if (cstate->numcomps <= 256) {
+		if (jpc_getuint8(in, &tmp)) {"
+diversevul_019669,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,15,<20,"static int jpc_sot_putparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *out)
+{
+	jpc_sot_t *sot = &ms->parms.sot;
+
+	/* Eliminate compiler warning about unused variables. */
+	cstate = 0;
+
+	if (jpc"
+diversevul_019670,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,18,<20,"static int jpc_rgn_putparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *out)
+{
+	jpc_rgn_t *rgn = &ms->parms.rgn;
+	if (cstate->numcomps <= 256) {
+		if (jpc_putuint8(out, rgn->compno)) {
+			return"
+diversevul_019618,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,19,<20,"static int jpc_crg_getparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *in)
+{
+	jpc_crg_t *crg = &ms->parms.crg;
+	jpc_crgcomp_t *comp;
+	uint_fast16_t compno;
+	crg->numcomps = cstate->numcomps;
+	i"
+diversevul_019660,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,51,50-100,"int jpc_putms(jas_stream_t *out, jpc_cstate_t *cstate, jpc_ms_t *ms)
+{
+	jas_stream_t *tmpstream;
+	int len;
+
+	/* Output the marker segment type. */
+	if (jpc_putuint16(out, ms->id)) {
+		return -1;
+	}
+
+	"
+diversevul_019928,0,1,0.9999,0.9999,CWE-189,xserver,6,<20,"ShmRegisterFuncs(
+    ScreenPtr pScreen,
+    ShmFuncsPtr funcs)
+{
+    shmFuncs[pScreen->myNum] = funcs;
+}"
+diversevul_018973,0,1,0.9999,0.9999,CWE-264,php-src,12,<20,"static int pdo_sqlite_set_attr(pdo_dbh_t *dbh, long attr, zval *val TSRMLS_DC)
+{
+	pdo_sqlite_db_handle *H = (pdo_sqlite_db_handle *)dbh->driver_data;
+
+	switch (attr) {
+		case PDO_ATTR_TIMEOUT:
+			conv"
+diversevul_019920,0,1,0.9999,0.9999,CWE-189,xserver,5,<20,"ShmRegisterFbFuncs(pScreen)
+    ScreenPtr pScreen;
+{
+    shmFuncs[pScreen->myNum] = &fbFuncs;
+}"
+diversevul_020171,0,1,0.9999,0.9999,NVD-CWE-Other,m4,8,<20,"m4___program__ (struct obstack *obs, int argc, token_data **argv)
+{
+  if (bad_argc (argv[0], argc, 1, 1))
+    return;
+  obstack_grow (obs, lquote.string, lquote.length);
+  obstack_grow (obs, program_n"
+diversevul_020210,0,1,0.9999,0.9999,NVD-CWE-Other,m4,32,20-50,"m4_indir (struct obstack *obs, int argc, token_data **argv)
+{
+  symbol *s;
+  const char *name;
+
+  if (bad_argc (argv[0], argc, 2, -1))
+    return;
+  if (TOKEN_DATA_TYPE (argv[1]) != TOKEN_TEXT)
+    {
+"
+diversevul_019622,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,16,<20,"void jpc_ms_dump(jpc_ms_t *ms, FILE *out)
+{
+	jpc_mstabent_t *mstabent;
+	mstabent = jpc_mstab_lookup(ms->id);
+	fprintf(out, ""type = 0x%04x (%s);"", ms->id, mstabent->name);
+	if (JPC_MS_HASPARMS(ms->id))"
+diversevul_019663,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,12,<20,"static int jpc_sop_getparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *in)
+{
+	jpc_sop_t *sop = &ms->parms.sop;
+
+	/* Eliminate compiler warning about unused variable. */
+	cstate = 0;
+
+	if (jpc_g"
+diversevul_020179,0,1,0.9999,0.9999,NVD-CWE-Other,m4,6,<20,"m4_format (struct obstack *obs, int argc, token_data **argv)
+{
+  if (bad_argc (argv[0], argc, 2, -1))
+    return;
+  format (obs, argc - 1, argv + 1);
+}"
+diversevul_018964,0,1,0.9999,0.9999,CWE-264,php-src,13,<20,"static int sqlite_handle_commit(pdo_dbh_t *dbh TSRMLS_DC)
+{
+	pdo_sqlite_db_handle *H = (pdo_sqlite_db_handle *)dbh->driver_data;
+	char *errmsg = NULL;
+
+	if (sqlite3_exec(H->db, ""COMMIT"", NULL, NULL, &"
+diversevul_019926,0,1,0.9999,0.9999,CWE-189,xserver,24,20-50,"static Bool CheckForShmSyscall()
+{
+    void (*oldHandler)();
+    int shmid = -1;
+
+    /* If no SHM support in the kernel, the bad syscall will generate SIGSYS */
+    oldHandler = signal(SIGSYS, SigSys"
+diversevul_019617,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,4,<20,"int jpc_getdata(jas_stream_t *in, jas_stream_t *out, long len)
+{
+	return jas_stream_copy(out, in, len);
+}"
+diversevul_020172,0,1,0.9999,0.9999,NVD-CWE-Other,m4,9,<20,"m4_changecom (struct obstack *obs, int argc, token_data **argv)
+{
+  if (bad_argc (argv[0], argc, 1, 3))
+    return;
+
+  /* Explicit NULL distinguishes between empty and missing argument.  */
+  set_comm"
+diversevul_019672,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,15,<20,"static int jpc_ppt_putparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *out)
+{
+	jpc_ppt_t *ppt = &ms->parms.ppt;
+
+	/* Eliminate compiler warning about unused variable. */
+	cstate = 0;
+
+	if (jpc_"
+diversevul_019659,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,4,<20,"int jpc_putdata(jas_stream_t *out, jas_stream_t *in, long len)
+{
+	return jas_stream_copy(out, in, len);
+}"
+diversevul_019639,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,55,50-100,"static int jpc_siz_getparms(jpc_ms_t *ms, jpc_cstate_t *cstate,
+  jas_stream_t *in)
+{
+	jpc_siz_t *siz = &ms->parms.siz;
+	unsigned int i;
+	uint_fast8_t tmp;
+
+	/* Eliminate compiler warning about unused"
+diversevul_019609,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,6,<20,"static void jpc_qcx_destroycompparms(jpc_qcxcp_t *compparms)
+{
+	if (compparms->stepsizes) {
+		jas_free(compparms->stepsizes);
+	}
+}"
+diversevul_020209,0,1,0.9999,0.9999,NVD-CWE-Other,m4,12,<20,"init_pattern_buffer (struct re_pattern_buffer *buf, struct re_registers *regs)
+{
+  buf->translate = NULL;
+  buf->fastmap = NULL;
+  buf->buffer = NULL;
+  buf->allocated = 0;
+  if (regs)
+    {
+      reg"
+diversevul_020233,0,1,0.9999,0.9999,NVD-CWE-Other,m4,8,<20,"m4_popdef (struct obstack *obs, int argc, token_data **argv)
+{
+  int i;
+  if (bad_argc (argv[0], argc, 2, -1))
+    return;
+  for (i = 1; i < argc; i++)
+    lookup_symbol (ARG (i), SYMBOL_POPDEF);
+}"
+diversevul_019653,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,11,<20,"int jpc_getuint8(jas_stream_t *in, uint_fast8_t *val)
+{
+	int c;
+	if ((c = jas_stream_getc(in)) == EOF) {
+		return -1;
+	}
+	if (val) {
+		*val = c;
+	}
+	return 0;
+}"
+diversevul_018958,0,1,0.9999,0.9999,CWE-264,php-src,50,20-50,"static int php_sqlite3_collation_callback(void *context,
+	int string1_len, const void *string1,
+	int string2_len, const void *string2)
+{
+	int ret;
+	zval *zstring1, *zstring2;
+	zval **zargs[2];
+	zval *"
+diversevul_019662,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,23,20-50,"static int jpc_com_getparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *in)
+{
+	jpc_com_t *com = &ms->parms.com;
+
+	/* Eliminate compiler warning about unused variables. */
+	cstate = 0;
+
+	if (jpc_"
+diversevul_019924,0,1,0.9999,0.9999,CWE-189,xserver,10,<20,"SProcShmDetach(client)
+    ClientPtr client;
+{
+    register int n;
+    REQUEST(xShmDetachReq);
+    swaps(&stuff->length, n);
+    REQUEST_SIZE_MATCH(xShmDetachReq);
+    swapl(&stuff->shmseg, n);
+    re"
+diversevul_019923,0,1,0.9999,0.9999,CWE-189,xserver,34,20-50,"ProcShmDispatch (client)
+    register ClientPtr	client;
+{
+    REQUEST(xReq);
+    switch (stuff->data)
+    {
+    case X_ShmQueryVersion:
+	return ProcShmQueryVersion(client);
+    case X_ShmAttach:
+	retu"
+diversevul_019925,0,1,0.9999,0.9999,CWE-189,xserver,51,50-100,"ShmExtensionInit(INITARGS)
+{
+    ExtensionEntry *extEntry;
+    int i;
+
+#ifdef MUST_CHECK_FOR_SHM_SYSCALL
+    if (!CheckForShmSyscall())
+    {
+	ErrorF(""MIT-SHM extension disabled due to lack of kernel "
+diversevul_020173,0,1,0.9999,0.9999,NVD-CWE-Other,m4,6,<20,"free_pattern_buffer (struct re_pattern_buffer *buf, struct re_registers *regs)
+{
+  regfree (buf);
+  free (regs->start);
+  free (regs->end);
+}"
+diversevul_019644,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,54,50-100,"static int jpc_poc_getparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *in)
+{
+	jpc_poc_t *poc = &ms->parms.poc;
+	jpc_pocpchg_t *pchg;
+	int pchgno;
+	uint_fast8_t tmp;
+	poc->numpchgs = (cstate->nu"
+diversevul_020222,0,1,0.9999,0.9999,NVD-CWE-Other,m4,15,<20,"m4_traceoff (struct obstack *obs, int argc, token_data **argv)
+{
+  symbol *s;
+  int i;
+
+  if (argc == 1)
+    hack_all_symbols (set_trace, NULL);
+  else
+    for (i = 1; i < argc; i++)
+      {
+	s = look"
+diversevul_019623,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,28,20-50,"static int jpc_cox_putcompparms(jpc_ms_t *ms, jpc_cstate_t *cstate,
+  jas_stream_t *out, int prtflag, jpc_coxcp_t *compparms)
+{
+	int i;
+	assert(compparms->numdlvls <= 32);
+
+	/* Eliminate compiler warn"
+diversevul_020239,0,1,0.9999,0.9999,NVD-CWE-noinfo,m4,204,>100,"reload_frozen_state (const char *name)
+{
+  FILE *file;
+  int character;
+  int operation;
+  char *string[2];
+  int allocated[2];
+  int number[2];
+  const builtin *bp;
+
+#define GET_CHARACTER \
+  (charac"
+diversevul_020218,0,1,0.9999,0.9999,NVD-CWE-Other,m4,6,<20,"m4_sysval (struct obstack *obs, int argc, token_data **argv)
+{
+  shipout_int (obs, (sysval == -1 ? 127
+		     : (M4SYSVAL_EXITBITS (sysval)
+			| M4SYSVAL_TERMSIGBITS (sysval))));
+}"
+diversevul_019645,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,21,20-50,"static int jpc_cod_dumpparms(jpc_ms_t *ms, FILE *out)
+{
+	jpc_cod_t *cod = &ms->parms.cod;
+	int i;
+	fprintf(out, ""csty = 0x%02x;\n"", cod->compparms.csty);
+	fprintf(out, ""numdlvls = %d; qmfbid = %d; mct"
+diversevul_019918,0,1,0.9999,0.9999,CWE-189,xserver,11,<20,"ProcShmDetach(client)
+    register ClientPtr client;
+{
+    ShmDescPtr shmdesc;
+    REQUEST(xShmDetachReq);
+
+    REQUEST_SIZE_MATCH(xShmDetachReq);
+    VERIFY_SHMSEG(stuff->shmseg, shmdesc, client);
+  "
+diversevul_018978,0,1,0.9999,0.9999,CWE-264,php-src,50,20-50,"static PHP_METHOD(SQLite, sqliteCreateFunction)
+{
+	struct pdo_sqlite_func *func;
+	zval *callback;
+	char *func_name;
+	int func_name_len;
+	long argc = -1;
+	char *cbname = NULL;
+	pdo_dbh_t *dbh;
+	pdo_sql"
+diversevul_019610,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,6,<20,"static int jpc_sop_dumpparms(jpc_ms_t *ms, FILE *out)
+{
+	jpc_sop_t *sop = &ms->parms.sop;
+	fprintf(out, ""seqno = %d;\n"", sop->seqno);
+	return 0;
+}"
+diversevul_018963,0,1,0.9999,0.9999,CWE-264,php-src,15,<20,"static long sqlite_handle_doer(pdo_dbh_t *dbh, const char *sql, long sql_len TSRMLS_DC)
+{
+	pdo_sqlite_db_handle *H = (pdo_sqlite_db_handle *)dbh->driver_data;
+	char *errmsg = NULL;
+
+	if (sqlite3_exec("
+diversevul_018962,0,1,0.9999,0.9999,CWE-264,php-src,30,20-50,"static int authorizer(void *autharg, int access_type, const char *arg3, const char *arg4,
+		const char *arg5, const char *arg6)
+{
+	char *filename;
+	switch (access_type) {
+		case SQLITE_COPY: {
+			TSRM"
+diversevul_020182,0,1,0.9999,0.9999,NVD-CWE-Other,m4,50,20-50,"expand_user_macro (struct obstack *obs, symbol *sym,
+		   int argc, token_data **argv)
+{
+  const char *text;
+  int i;
+
+  for (text = SYMBOL_TEXT (sym); *text != '\0';)
+    {
+      if (*text != '$')
+	{"
+diversevul_019638,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,17,<20,"static int jpc_cod_putparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *out)
+{
+	jpc_cod_t *cod = &ms->parms.cod;
+	assert(cod->numlyrs > 0 && cod->compparms.numdlvls <= 32);
+	assert(cod->compparm"
+diversevul_019922,0,1,0.9999,0.9999,CWE-189,xserver,104,>100,"ProcPanoramiXShmCreatePixmap(
+    register ClientPtr client)
+{
+    ScreenPtr pScreen = NULL;
+    PixmapPtr pMap = NULL;
+    DrawablePtr pDraw;
+    DepthPtr pDepth;
+    int i, j, result, rc;
+    ShmDes"
+diversevul_019608,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,4,<20,"void jpc_cstate_destroy(jpc_cstate_t *cstate)
+{
+	jas_free(cstate);
+}"
+diversevul_019615,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,7,<20,"static int jpc_sot_dumpparms(jpc_ms_t *ms, FILE *out)
+{
+	jpc_sot_t *sot = &ms->parms.sot;
+	fprintf(out, ""tileno = %d; len = %d; partno = %d; numparts = %d\n"",
+	  sot->tileno, sot->len, sot->partno, so"
+diversevul_020226,0,1,0.9999,0.9999,NVD-CWE-Other,m4,33,20-50,"builtin_init (void)
+{
+  const builtin *bp;
+  const predefined *pp;
+  char *string;
+
+  for (bp = &builtin_tab[0]; bp->name != NULL; bp++)
+    if (!no_gnu_extensions || !bp->gnu_extension)
+      {
+	if ("
+diversevul_019616,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,10,<20,"int jpc_putuint32(jas_stream_t *out, uint_fast32_t val)
+{
+	if (jas_stream_putc(out, (val >> 24) & 0xff) == EOF ||
+	  jas_stream_putc(out, (val >> 16) & 0xff) == EOF ||
+	  jas_stream_putc(out, (val >> "
+diversevul_019679,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,7,<20,"static void jpc_ppt_destroyparms(jpc_ms_t *ms)
+{
+	jpc_ppt_t *ppt = &ms->parms.ppt;
+	if (ppt->data) {
+		jas_free(ppt->data);
+	}
+}"
+diversevul_019906,0,1,0.9999,0.9999,CWE-189,xserver,100,50-100,"ProcShmPutImage(client)
+    register ClientPtr client;
+{
+    GCPtr pGC;
+    DrawablePtr pDraw;
+    long length;
+    ShmDescPtr shmdesc;
+    REQUEST(xShmPutImageReq);
+
+    REQUEST_SIZE_MATCH(xShmPutIma"
+diversevul_019654,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,18,<20,"static int jpc_sot_getparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *in)
+{
+	jpc_sot_t *sot = &ms->parms.sot;
+
+	/* Eliminate compiler warning about unused variables. */
+	cstate = 0;
+
+	if (jpc_"
+diversevul_020227,0,1,0.9999,0.9999,NVD-CWE-Other,m4,25,20-50,"m4_m4exit (struct obstack *obs, int argc, token_data **argv)
+{
+  int exit_code = EXIT_SUCCESS;
+
+  /* Warn on bad arguments, but still exit.  */
+  bad_argc (argv[0], argc, 1, 2);
+  if (argc >= 2 && !nu"
+diversevul_020169,0,1,0.9999,0.9999,NVD-CWE-Other,m4,28,20-50,"m4_esyscmd (struct obstack *obs, int argc, token_data **argv)
+{
+  FILE *pin;
+  int ch;
+
+  if (bad_argc (argv[0], argc, 2, 2))
+    {
+      /* The empty command is successful.  */
+      sysval = 0;
+    "
+diversevul_020200,0,1,0.9999,0.9999,NVD-CWE-Other,m4,33,20-50,"mkstemp_helper (struct obstack *obs, const char *me, const char *pattern,
+		size_t len)
+{
+  int fd;
+  int i;
+  char *name;
+
+  /* Guarantee that there are six trailing 'X' characters, even if the
+     "
+diversevul_018961,0,1,0.9999,0.9999,CWE-264,php-src,9,<20,"static char *pdo_sqlite_last_insert_id(pdo_dbh_t *dbh, const char *name, unsigned int *len TSRMLS_DC)
+{
+	pdo_sqlite_db_handle *H = (pdo_sqlite_db_handle *)dbh->driver_data;
+	char *id;
+	
+	id = php_pdo_"
+diversevul_020221,0,1,0.9999,0.9999,NVD-CWE-Other,m4,11,<20,"m4_debugfile (struct obstack *obs, int argc, token_data **argv)
+{
+  if (bad_argc (argv[0], argc, 1, 2))
+    return;
+
+  if (argc == 1)
+    debug_set_output (NULL);
+  else if (!debug_set_output (ARG (1)"
+diversevul_020180,0,1,0.9999,0.9999,NVD-CWE-Other,m4,20,20-50,"m4_index (struct obstack *obs, int argc, token_data **argv)
+{
+  const char *haystack;
+  const char *result;
+  int retval;
+
+  if (bad_argc (argv[0], argc, 3, 3))
+    {
+      /* builtin(`index') is blan"
+diversevul_019613,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,9,<20,"jpc_cstate_t *jpc_cstate_create()
+{
+	jpc_cstate_t *cstate;
+	if (!(cstate = jas_malloc(sizeof(jpc_cstate_t)))) {
+		return 0;
+	}
+	cstate->numcomps = 0;
+	return cstate;
+}"
+diversevul_019626,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,15,<20,"jpc_ms_t *jpc_ms_create(int type)
+{
+	jpc_ms_t *ms;
+	jpc_mstabent_t *mstabent;
+
+	if (!(ms = jas_malloc(sizeof(jpc_ms_t)))) {
+		return 0;
+	}
+	ms->id = type;
+	ms->len = 0;
+	mstabent = jpc_mstab_lookup(ms"
+diversevul_019627,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,15,<20,"static int jpc_com_putparms(jpc_ms_t *ms, jpc_cstate_t *cstate, jas_stream_t *out)
+{
+	jpc_com_t *com = &ms->parms.com;
+
+	/* Eliminate compiler warning about unused variables. */
+	cstate = 0;
+
+	if (jpc"
+diversevul_019637,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,10,<20,"static int jpc_ppt_dumpparms(jpc_ms_t *ms, FILE *out)
+{
+	jpc_ppt_t *ppt = &ms->parms.ppt;
+	fprintf(out, ""ind=%d; len = %d;\n"", ppt->ind, ppt->len);
+	if (ppt->len > 0) {
+		fprintf(out, ""data =\n"");
+		j"
+diversevul_019636,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,11,<20,"static jpc_mstabent_t *jpc_mstab_lookup(int id)
+{
+	jpc_mstabent_t *mstabent;
+	for (mstabent = jpc_mstab;; ++mstabent) {
+		if (mstabent->id == id || mstabent->id < 0) {
+			return mstabent;
+		}
+	}
+	asse"
+diversevul_020216,0,1,0.9999,0.9999,NVD-CWE-Other,m4,12,<20,"m4_decr (struct obstack *obs, int argc, token_data **argv)
+{
+  int value;
+
+  if (bad_argc (argv[0], argc, 2, 2))
+    return;
+
+  if (!numeric_arg (argv[0], ARG (1), &value))
+    return;
+
+  shipout_int "
+diversevul_019621,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,5,<20,"static void jpc_qcc_destroyparms(jpc_ms_t *ms)
+{
+	jpc_qcc_t *qcc = &ms->parms.qcc;
+	jpc_qcx_destroycompparms(&qcc->compparms);
+}"
+diversevul_020184,0,1,0.9999,0.9999,NVD-CWE-Other,m4,9,<20,"find_builtin_by_name (const char *name)
+{
+  const builtin *bp;
+
+  for (bp = &builtin_tab[0]; bp->name != NULL; bp++)
+    if (strcmp (bp->name, name) == 0)
+      return bp;
+  return bp + 1;
+}"
+diversevul_018966,0,1,0.9999,0.9999,CWE-264,php-src,14,<20,"static int pdo_sqlite_get_attribute(pdo_dbh_t *dbh, long attr, zval *return_value TSRMLS_DC)
+{
+	switch (attr) {
+		case PDO_ATTR_CLIENT_VERSION:
+		case PDO_ATTR_SERVER_VERSION:
+			ZVAL_STRING(return_va"
+diversevul_019678,0,1,0.9999,0.9999,NVD-CWE-Other,jasper,14,<20,"static int jpc_qcc_dumpparms(jpc_ms_t *ms, FILE *out)
+{
+	jpc_qcc_t *qcc = &ms->parms.qcc;
+	int i;
+	fprintf(out, ""compno = %d; qntsty = %d; numguard = %d; ""
+	  ""numstepsizes = %d\n"", qcc->compno, qcc->"
+diversevul_019921,0,1,0.9999,0.9999,CWE-189,xserver,32,20-50,"miShmPutImage(dst, pGC, depth, format, w, h, sx, sy, sw, sh, dx, dy, data)
+    DrawablePtr dst;
+    GCPtr	pGC;
+    int		depth, w, h, sx, sy, sw, sh, dx, dy;
+    unsigned int format;
+    char 	*data;
+{"
+diversevul_019904,0,1,0.9999,0.9999,CWE-189,xserver,11,<20,"ShmResetProc (extEntry)
+ExtensionEntry	*extEntry;
+{
+    int i;
+
+    for (i = 0; i < MAXSCREENS; i++)
+    {
+	shmFuncs[i] = (ShmFuncsPtr)NULL;
+	shmPixFormat[i] = 0;
+    }
+}"

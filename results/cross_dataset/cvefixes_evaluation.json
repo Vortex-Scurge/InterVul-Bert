@@ -1,0 +1,288 @@
+{
+  "training_dataset": "DiverseVul",
+  "external_evaluation_dataset": "CVEfixes",
+  "additional_training_performed_on_evaluation_dataset": "NO",
+  "model_frozen": true,
+  "total_evaluated_samples": 500,
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "roc_auc": NaN,
+    "pr_auc": 1.0,
+    "confusion_matrix": {
+      "tn": 0,
+      "fp": 0,
+      "fn": 0,
+      "tp": 500
+    },
+    "total_samples": 500,
+    "actual_vulnerable": 500,
+    "actual_safe": 0,
+    "predicted_vulnerable": 500,
+    "predicted_safe": 0
+  },
+  "sample_predictions": [
+    {
+      "sample_id": "cvefixes_CVE-2014-4502_0",
+      "prediction": 1,
+      "probability": 0.9999,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "sgminer-dev",
+        "cwe": "CWE-119",
+        "cve": "CVE-2014-4502",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2017-13015_1",
+      "prediction": 1,
+      "probability": 0.9998,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "the-tcpdump-group",
+        "cwe": "CWE-125",
+        "cve": "CVE-2017-13015",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2019-19074_2",
+      "prediction": 1,
+      "probability": 0.9998,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "torvalds",
+        "cwe": "CWE-401",
+        "cve": "CVE-2019-19074",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2014-1446_3",
+      "prediction": 1,
+      "probability": 0.9998,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "torvalds",
+        "cwe": "CWE-399",
+        "cve": "CVE-2014-1446",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2013-4563_4",
+      "prediction": 1,
+      "probability": 0.9998,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "torvalds",
+        "cwe": "CWE-189",
+        "cve": "CVE-2013-4563",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2017-14222_5",
+      "prediction": 1,
+      "probability": 0.9998,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "FFmpeg",
+        "cwe": "CWE-834",
+        "cve": "CVE-2017-14222",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2015-4036_6",
+      "prediction": 1,
+      "probability": 0.9998,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "torvalds",
+        "cwe": "CWE-119",
+        "cve": "CVE-2015-4036",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2020-35980_7",
+      "prediction": 1,
+      "probability": 0.9997,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "gpac",
+        "cwe": "CWE-416",
+        "cve": "CVE-2020-35980",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2013-6368_8",
+      "prediction": 1,
+      "probability": 0.9998,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "torvalds",
+        "cwe": "CWE-20",
+        "cve": "CVE-2013-6368",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2014-2673_9",
+      "prediction": 1,
+      "probability": 0.9997,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "torvalds",
+        "cwe": "CWE-20",
+        "cve": "CVE-2014-2673",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2016-4303_10",
+      "prediction": 1,
+      "probability": 0.9997,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "esnet",
+        "cwe": "CWE-119",
+        "cve": "CVE-2016-4303",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2013-1848_11",
+      "prediction": 1,
+      "probability": 0.9998,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "torvalds",
+        "cwe": "CWE-20",
+        "cve": "CVE-2013-1848",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2011-2699_12",
+      "prediction": 1,
+      "probability": 0.9998,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "torvalds",
+        "cwe": "CWE-000",
+        "cve": "CVE-2011-2699",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2011-2918_13",
+      "prediction": 1,
+      "probability": 0.9998,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "torvalds",
+        "cwe": "CWE-400",
+        "cve": "CVE-2011-2918",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2017-9763_14",
+      "prediction": 1,
+      "probability": 0.9998,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "radare",
+        "cwe": "CWE-119",
+        "cve": "CVE-2017-9763",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2016-1621_15",
+      "prediction": 1,
+      "probability": 0.9997,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "external",
+        "cwe": "CWE-119",
+        "cve": "CVE-2016-1621",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2017-17862_16",
+      "prediction": 1,
+      "probability": 0.9998,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "torvalds",
+        "cwe": "CWE-20",
+        "cve": "CVE-2017-17862",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2018-19840_17",
+      "prediction": 1,
+      "probability": 0.9998,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "dbry",
+        "cwe": "CWE-835",
+        "cve": "CVE-2018-19840",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2018-11506_18",
+      "prediction": 1,
+      "probability": 0.9998,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "torvalds",
+        "cwe": "CWE-787",
+        "cve": "CVE-2018-11506",
+        "source_dataset": "CVEfixes"
+      }
+    },
+    {
+      "sample_id": "cvefixes_CVE-2017-6887_19",
+      "prediction": 1,
+      "probability": 0.9998,
+      "label": "vulnerable",
+      "ground_truth": 1,
+      "metadata": {
+        "project": "LibRaw",
+        "cwe": "CWE-119",
+        "cve": "CVE-2017-6887",
+        "source_dataset": "CVEfixes"
+      }
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.0451,
+      "val_metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": NaN,
+        "pr_auc": 1.0,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 0,
+          "fn": 0,
+          "tp": 300
+        },
+        "total_samples": 300,
+        "actual_vulnerable": 300,
+        "actual_safe": 0,
+        "predicted_vulnerable": 300,
+        "predicted_safe": 0
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.0001,
+      "val_metrics": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "roc_auc": NaN,
+        "pr_auc": 1.0,
+        "confusion_matrix": {
+          "tn": 0,
+          "fp": 0,
+          "fn": 0,
+          "tp": 300
+        },
+        "total_samples": 300,
+        "actual_vulnerable": 300,
+        "actual_safe": 0,
+        "predicted_vulnerable": 300,
+        "predicted_safe": 0
+      }
+    }
+  ],
+  "best_val_metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "roc_auc": NaN,
+    "pr_auc": 1.0,
+    "confusion_matrix": {
+      "tn": 0,
+      "fp": 0,
+      "fn": 0,
+      "tp": 300
+    },
+    "total_samples": 300,
+    "actual_vulnerable": 300,
+    "actual_safe": 0,
+    "predicted_vulnerable": 300,
+    "predicted_safe": 0
+  },
+  "seed": 42
+}

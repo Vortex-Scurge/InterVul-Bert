@@ -1,0 +1,71 @@
+callgraph:
+  parser: "tree-sitter"
+  languages: ["c", "cpp"]
+  max_depth: 5
+  resolve_stdlib_sinks: true
+  known_sources:
+    - "recv"
+    - "read"
+    - "scanf"
+    - "fscanf"
+    - "fgets"
+    - "getenv"
+    - "getchar"
+    - "fread"
+    - "getc"
+    - "process_request"
+    - "handle_input"
+    - "receive_packet"
+  known_sinks:
+    - "strcpy"
+    - "strcat"
+    - "sprintf"
+    - "vsprintf"
+    - "memcpy"
+    - "memmove"
+    - "system"
+    - "popen"
+    - "execve"
+    - "execl"
+    - "free"
+    - "malloc"
+    - "execute_query"
+    - "db_query"
+
+chain_detection:
+  min_chain_length: 2
+  max_chain_length: 6
+  high_risk_threshold: 0.70
+  medium_risk_threshold: 0.45
+  require_source_or_sink: true
+
+context_strategies:
+  local:
+    include_callers: false
+    include_callees: false
+    hops: 0
+  caller:
+    include_callers: true
+    include_callees: false
+    hops: 1
+  callee:
+    include_callers: false
+    include_callees: true
+    hops: 1
+  full:
+    include_callers: true
+    include_callees: true
+    hops: 1
+  multihop:
+    include_callers: true
+    include_callees: true
+    hops: 2
+
+visualization:
+  theme: "dark"
+  ascii_box_style: "double"
+  generate_svg: true
+  generate_html: true
+  reports_dir: "demo/reports"
+  chains_dir: "demo/generated_chains"
+  figures_dir: "results/figures"

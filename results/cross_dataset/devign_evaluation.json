@@ -1,0 +1,288 @@
+{
+  "training_dataset": "DiverseVul",
+  "external_evaluation_dataset": "Devign",
+  "additional_training_performed_on_evaluation_dataset": "NO",
+  "model_frozen": true,
+  "total_evaluated_samples": 500,
+  "metrics": {
+    "accuracy": 0.0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "roc_auc": NaN,
+    "pr_auc": 0.5,
+    "confusion_matrix": {
+      "tn": 0,
+      "fp": 500,
+      "fn": 0,
+      "tp": 0
+    },
+    "total_samples": 500,
+    "actual_vulnerable": 0,
+    "actual_safe": 500,
+    "predicted_vulnerable": 500,
+    "predicted_safe": 0
+  },
+  "sample_predictions": [
+    {
+      "sample_id": "devign_qemu_00000",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "qemu",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_FFmpeg_00001",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "FFmpeg",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_qemu_00002",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "qemu",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_qemu_00003",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "qemu",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_FFmpeg_00004",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "FFmpeg",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_FFmpeg_00005",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "FFmpeg",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_qemu_00006",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "qemu",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_qemu_00007",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "qemu",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_qemu_00008",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "qemu",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_qemu_00009",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "qemu",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_qemu_00010",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "qemu",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_FFmpeg_00011",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "FFmpeg",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_qemu_00012",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "qemu",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_qemu_00013",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "qemu",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_FFmpeg_00014",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "FFmpeg",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_qemu_00015",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "qemu",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_FFmpeg_00016",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "FFmpeg",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_qemu_00017",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "qemu",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_qemu_00018",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "qemu",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    },
+    {
+      "sample_id": "devign_FFmpeg_00019",
+      "prediction": 1,
+      "probability": 0.8914,
+      "label": "vulnerable",
+      "ground_truth": 0,
+      "metadata": {
+        "project": "FFmpeg",
+        "cwe": null,
+        "cve": null,
+        "source_dataset": "Devign"
+      }
+    }
+  ]
+}

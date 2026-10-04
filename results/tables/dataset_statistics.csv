@@ -1,0 +1,2 @@
+dataset_name,total_samples,vulnerable_samples,safe_samples,class_ratio_vuln_to_safe,vuln_percentage,unique_projects,unique_cwes,unique_cves,languages,avg_lines_per_function,median_lines_per_function,max_lines_per_function,min_lines_per_function,avg_chars_per_function,exact_duplicates,near_duplicates,missing_code_count
+DiverseVul,40000,18945,21055,0.8998,47.36,796,129,2958,['c'],71.21,28.0,23939,1,2143.22,0,118,0

@@ -1,0 +1,19 @@
+{
+  "accuracy": 0.5167,
+  "precision": 0.5167,
+  "recall": 1.0,
+  "f1": 0.6813,
+  "roc_auc": 0.683,
+  "pr_auc": 0.6267,
+  "confusion_matrix": {
+    "tn": 0,
+    "fp": 145,
+    "fn": 0,
+    "tp": 155
+  },
+  "total_samples": 300,
+  "actual_vulnerable": 155,
+  "actual_safe": 145,
+  "predicted_vulnerable": 300,
+  "predicted_safe": 0
+}

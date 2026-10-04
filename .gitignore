@@ -1,0 +1,66 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+
+# Large dataset raw files (keep sample/processed/manifests)
+data/raw/diversevul/*.json
+data/raw/diversevul/*.jsonl
+data/interim/*
+!data/interim/.gitkeep
+!data/raw/**/.gitkeep
+
+# Large model binaries and checkpoints (GitHub 100MB file limit)
+models/*/*.bin
+models/*/*.pt
+models/*/*.pth
+models/*/*.safetensors
+models/*/*.onnx
+models/*/*.ckpt
+!models/*/*.json
+!models/*/*.txt
+!models/*/*.md
+!models/**/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db

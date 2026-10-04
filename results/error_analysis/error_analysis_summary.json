@@ -1,0 +1,41 @@
+{
+  "total_samples": 300,
+  "true_positives": 155,
+  "true_negatives": 0,
+  "false_positives": 145,
+  "false_negatives": 0,
+  "top_false_positive": {
+    "sample_id": "diversevul_019912",
+    "ground_truth": 0,
+    "prediction": 1,
+    "probability": 0.9999,
+    "confidence": 0.9999,
+    "cwe": "CWE-189",
+    "project": "xserver",
+    "line_count": 27,
+    "length_bin": "20-50",
+    "code_snippet": "ProcShmQueryVersion(client)\n    register ClientPtr client;\n{\n    xShmQueryVersionReply rep;\n    register int n;\n\n    REQUEST_SIZE_MATCH(xShmQueryVersionReq);\n    rep.type = X_Reply;\n    rep.length = 0"
+  },
+  "top_false_negative": null,
+  "cwe_fp_distribution": {
+    "NVD-CWE-Other": 104,
+    "CWE-189": 20,
+    "CWE-264": 18,
+    "NVD-CWE-noinfo": 3
+  },
+  "cwe_fn_distribution": {},
+  "project_fp_distribution": {
+    "jasper": 57,
+    "m4": 50,
+    "xserver": 20,
+    "php-src": 18
+  },
+  "project_fn_distribution": {},
+  "length_fp_distribution": {
+    "20-50": 40,
+    "<20": 88,
+    ">100": 5,
+    "50-100": 12
+  },
+  "length_fn_distribution": {}
+}

@@ -1,0 +1,18 @@
+{
+  "exact_duplicates_count": 0,
+  "near_duplicates_count": 0,
+  "same_project_overlap_count": 0,
+  "potential_patched_unpatched_overlap_count": 0,
+  "potential_cve_overlap_count": 1,
+  "train_count": 2100,
+  "val_count": 483,
+  "test_count": 417,
+  "train_projects": 44,
+  "test_projects": 26,
+  "overlapping_projects": [],
+  "details": {
+    "overlapping_cves": [
+      "None"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+source_experiment:
+  training_dataset: "DiverseVul"
+  baseline_model: "models/codebert"
+  pretrained_fallback: "microsoft/codebert-base"
+
+external_datasets:
+  cvefixes:
+    name: "CVEfixes"
+    path: "data/raw/cvefixes/cvefixes_test.csv"
+    format: "csv"
+    code_column: "source"
+    label_column: "cwe_id" # CWE indicates vulnerability (label=1)
+    max_samples: 500
+
+  devign:
+    name: "Devign"
+    path: "data/raw/other/devign_test.csv"
+    format: "csv"
+    code_column: "func"
+    label_column: "target"
+    max_samples: 500
+
+evaluation:
+  freeze_model: true
+  additional_training: false
+  results_dir: "results/cross_dataset"
+  batch_size: 16
+  max_length: 512

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 815" width="500" height="815">
+<defs>
+  <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+    <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+  </filter>
+  <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+  </marker>
+</defs>
+<rect width="500" height="815" fill="#0f172a" rx="12"/>
+<text x="250" y="38" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold" fill="#38bdf8" text-anchor="middle">InterVul-Graph: CHAIN_001</text>
+<text x="250" y="58" font-family="-apple-system, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Chain Risk Score: 0.96 | Chain Evidence Strength: 0.98 | HIGH RISK</text>
+<rect x="60" y="80" width="380" height="80" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+<rect x="74" y="92" width="90" height="20" rx="4" fill="#334155"/>
+<text x="119" y="106" font-family="-apple-system, sans-serif" font-size="10" font-weight="bold" fill="#cbd5e1" text-anchor="middle">SOURCE</text>
+<rect x="356" y="92" width="70" height="20" rx="4" fill="#ef444433"/>
+<text x="391" y="106" font-family="-apple-system, sans-serif" font-size="10" font-weight="bold" fill="#ef4444" text-anchor="middle">HIGH</text>
+<text x="76" y="132" font-family="Courier, monospace" font-size="14" font-weight="bold" fill="#f8fafc">handle_request()</text>
+<text x="424" y="132" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="end">Model prob: 0.91</text>
+<rect x="76" y="144" width="348" height="4" rx="2" fill="#334155"/>
+<rect x="76" y="144" width="315" height="4" rx="2" fill="#ef4444"/>
+<line x1="250" y1="160" x2="250" y2="199" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="260" y="186" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8">calls</text>
+<rect x="60" y="205" width="380" height="80" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="2" filter="url(#shadow)"/>
+<rect x="74" y="217" width="90" height="20" rx="4" fill="#334155"/>
+<text x="119" y="231" font-family="-apple-system, sans-serif" font-size="10" font-weight="bold" fill="#cbd5e1" text-anchor="middle">INTERMEDIATE</text>
+<rect x="356" y="217" width="70" height="20" rx="4" fill="#f59e0b33"/>
+<text x="391" y="231" font-family="-apple-system, sans-serif" font-size="10" font-weight="bold" fill="#f59e0b" text-anchor="middle">MEDIUM</text>
+<text x="76" y="257" font-family="Courier, monospace" font-size="14" font-weight="bold" fill="#f8fafc">process_request()</text>
+<text x="424" y="257" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold" fill="#f59e0b" text-anchor="end">Model prob: 0.70</text>
+<rect x="76" y="269" width="348" height="4" rx="2" fill="#334155"/>
+<rect x="76" y="269" width="242" height="4" rx="2" fill="#f59e0b"/>
+<line x1="250" y1="285" x2="250" y2="324" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="260" y="311" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8">calls</text>
+<rect x="60" y="330" width="380" height="80" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+<rect x="74" y="342" width="90" height="20" rx="4" fill="#334155"/>
+<text x="119" y="356" font-family="-apple-system, sans-serif" font-size="10" font-weight="bold" fill="#cbd5e1" text-anchor="middle">INTERMEDIATE</text>
+<rect x="356" y="342" width="70" height="20" rx="4" fill="#ef444433"/>
+<text x="391" y="356" font-family="-apple-system, sans-serif" font-size="10" font-weight="bold" fill="#ef4444" text-anchor="middle">HIGH</text>
+<text x="76" y="382" font-family="Courier, monospace" font-size="14" font-weight="bold" fill="#f8fafc">validate_request()</text>
+<text x="424" y="382" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="end">Model prob: 0.91</text>
+<rect x="76" y="394" width="348" height="4" rx="2" fill="#334155"/>
+<rect x="76" y="394" width="316" height="4" rx="2" fill="#ef4444"/>
+<line x1="250" y1="410" x2="250" y2="449" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="260" y="436" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8">calls</text>
+<rect x="60" y="455" width="380" height="80" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+<rect x="74" y="467" width="150" height="20" rx="4" fill="#334155"/>
+<text x="149" y="481" font-family="-apple-system, sans-serif" font-size="10" font-weight="bold" fill="#cbd5e1" text-anchor="middle">HIGH-RISK INTERMEDIATE</text>
+<rect x="356" y="467" width="70" height="20" rx="4" fill="#ef444433"/>
+<text x="391" y="481" font-family="-apple-system, sans-serif" font-size="10" font-weight="bold" fill="#ef4444" text-anchor="middle">HIGH</text>
+<text x="76" y="507" font-family="Courier, monospace" font-size="14" font-weight="bold" fill="#f8fafc">execute_query()</text>
+<text x="424" y="507" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="end">Model prob: 0.88</text>
+<rect x="76" y="519" width="348" height="4" rx="2" fill="#334155"/>
+<rect x="76" y="519" width="305" height="4" rx="2" fill="#ef4444"/>
+<line x1="250" y1="535" x2="250" y2="574" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="260" y="561" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8">calls</text>
+<rect x="60" y="580" width="380" height="80" rx="8" fill="#1e293b" stroke="#ef4444" stroke-width="2" filter="url(#shadow)"/>
+<rect x="74" y="592" width="90" height="20" rx="4" fill="#334155"/>
+<text x="119" y="606" font-family="-apple-system, sans-serif" font-size="10" font-weight="bold" fill="#cbd5e1" text-anchor="middle">SINK</text>
+<rect x="356" y="592" width="70" height="20" rx="4" fill="#ef444433"/>
+<text x="391" y="606" font-family="-apple-system, sans-serif" font-size="10" font-weight="bold" fill="#ef4444" text-anchor="middle">HIGH</text>
+<text x="76" y="632" font-family="Courier, monospace" font-size="14" font-weight="bold" fill="#f8fafc">strcpy()</text>
+<text x="424" y="632" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="end">Static Sink</text>
+<rect x="76" y="644" width="348" height="4" rx="2" fill="#334155"/>
+<rect x="76" y="644" width="295" height="4" rx="2" fill="#ef4444"/>
+<rect x="60" y="705" width="380" height="85" rx="8" fill="#131d31" stroke="#ef4444" stroke-width="2"/>
+<text x="74" y="729" font-family="-apple-system, sans-serif" font-size="12" font-weight="bold" fill="#38bdf8">CHAIN ASSESSMENT</text>
+<text x="426" y="729" font-family="-apple-system, sans-serif" font-size="11" font-weight="bold" fill="#ef4444" text-anchor="end">Overall: HIGH RISK</text>
+<text x="74" y="751" font-family="-apple-system, sans-serif" font-size="11" fill="#cbd5e1">Source: YES  |  Sink: YES  |  Path: YES  |  Traversal: CONFIRMED</text>
+<text x="74" y="773" font-family="-apple-system, sans-serif" font-size="11" fill="#94a3b8">Chain Risk Score: <tspan fill="#f8fafc" font-weight="bold">0.96</tspan>   Chain Evidence Strength: <tspan fill="#f8fafc" font-weight="bold">0.98</tspan></text>
+</svg>
